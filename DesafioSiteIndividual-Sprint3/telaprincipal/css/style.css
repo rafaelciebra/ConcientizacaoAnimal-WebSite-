@@ -1,0 +1,121 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #FA8072;
+}
+.container{
+    height: 65vh;
+}
+.nav-menu{
+    background-color: #191919;
+    opacity: 60%;
+    height: 80px;
+    width: 100%;
+}
+.nav-menu div ul{
+    margin: 0 auto;
+    margin-left: 10%;
+}
+.nav-menu div ul li{
+display: inline-block;
+padding: 20px;
+margin-top: 10px;
+}
+
+.nav-menu div a{
+    font-size: 18px;
+    color: ivory;
+    text-decoration: none;
+}
+.nav-menu div ul li :hover{
+    border-bottom: 4px solid #273746;
+
+
+}
+
+.user_profile{
+    border-radius: 35px;
+	color: #ffffff ;
+    font-size: 12px;
+    height: 50px;
+    width: 15%;
+    cursor: pointer;
+    margin-left: 15%;
+    background: none;
+  outline: none;
+}
+.user_profile:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.8s;
+
+}
+.nav-menu i{
+    font-size: 60px;
+    margin-left: 5%;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.nav-container {
+    float: right;
+    width: 90%;   
+}
+.title111{
+    text-align: center;
+    font-size: 50px;
+    color: #191919;   
+}
+.title111 h3{
+    font-size: 30px;
+    color: #191919;
+}
+.ongs-btn{
+    border-radius: 35px;
+	color: #ffffff ;
+    font-size: 20px;
+    height: 70px;
+    width: 30%;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 40px;
+    background: none;
+    background-color: #273746;
+    border: none;
+    outline: none;
+}
+.ongs-btn:hover{
+    background-color: #f3f3f3;
+    color: #453B51;
+    transition: all 0.5s;
+
+}
+p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 60px;
+}
+.page-ongs img{
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 1vh;
+    
+}
+.page-ongs :hover img{
+    transform: scale(1.1);
+}
+.ongsGeo ul a{
+    display: inline-block;
+    padding: 20px;
+}
+.ongsGeo a{
+    display: flex;
+    align-items: center 
+}
+.page-ongs h1{
+    text-align: center;
+    font-size: 70px;
+    color: #191919;
+
+}

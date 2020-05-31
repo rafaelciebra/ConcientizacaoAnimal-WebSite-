@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background: url(../imagens/animal.jpg) no-repeat;
+
+}
+.register-box{
+    
+margin-top: 10vh;
+margin-left: 7%;
+width:50%;
+height: 750px;
+color: #E74C3C;
+border-radius: 2px;
+}
+.register-box h2{
+color:#E74C3C;
+margin-left: 5%;
+}
+.container{
+width: 50%;
+
+
+
+
+}
+.combo-box select{
+    width: 70%;
+    height: 45px;
+    border: none;
+    margin: 8px 0;
+    background: none;
+    border: 1px solid #E74C3C;
+    border-radius: 30px;
+    text-align: center;
+    color:#E74C3C;
+    outline: none;
+    margin-top: 8px;
+    
+}
+
+.container-box input{
+    
+    font-size: 18px;
+    height: 27px;
+    width: 70%;
+    border-radius: 30px;
+    border: 1px solid #E74C3C ;
+    background-color:#E74C3C ;
+    overflow: hidden;
+    padding: 8px 0;
+    margin: 8px 0;
+    text-align: center;
+    color: #E74C3C;
+    background: #ffffff;
+    outline: none;
+}
+.container-box input:hover{
+    transition: all 0.5s;
+
+ border:1px solid#008000;
+    
+}
+
+.container-box ::placeholder{
+    color:#E74C3C;
+}
+.register-button button{
+    border-radius: 30px;
+	border: 1px solid #E74C3C;
+	background-color: #E74C3C ;
+	color: #FFFFFF;
+    font-size: 18px;
+    height: 50px;
+    width: 45%;
+    cursor: pointer;
+   
+    margin-left: 15% ;
+    outline: none;
+    margin-top: 11vh;
+}
+.register-button button:hover{
+    transition: all 0.8s;
+
+    background: #ffffff;
+    color: #E74C3C;
+}
