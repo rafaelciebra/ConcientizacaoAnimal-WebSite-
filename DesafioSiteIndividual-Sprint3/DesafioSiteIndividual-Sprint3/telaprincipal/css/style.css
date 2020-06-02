@@ -1,0 +1,273 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #2E4053;
+}
+.container{
+   
+    height: 90vh;
+    background: url(../imagens/animal.jpg) no-repeat;
+}
+.nav-menu{
+    background-color: #191919;
+    opacity: 80%;
+    height: 80px;
+    width: 100%;
+
+
+    
+}
+.nav-menu div ul{
+    margin: 0 auto;
+    margin-left: 10%;
+}
+.nav-menu div ul li{
+display: inline-block;
+padding: 20px;
+margin-top: 10px;
+}
+
+.nav-menu div a{
+    font-size: 18px;
+    color: ivory;
+    text-decoration: none;
+
+}
+.nav-menu a:hover{
+border-bottom:2px solid #ffffff;}
+
+.user_profile{
+    border-radius: 35px;
+	color: #ffffff ;
+    font-size: 12px;
+    height: 50px;
+    width: 15%;
+    cursor: pointer;
+    background: none;
+  outline: none;
+}
+.user_profile:hover{
+    background-color: #ffffff;
+    color: #191919;
+    transition: all 0.8s;
+
+}
+.nav-menu i{
+    font-size: 60px;
+    margin-left: 5%;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.nav-container {
+    float: right;
+    width: 90%;   
+}
+.title111{
+    text-align: center;
+    font-size: 50px;
+    color: #191919;   
+}
+.title111 h3{
+    font-size: 30px;
+    color: #191919;
+}
+.ongs-btn{
+    border-radius: 35px;
+	color: #ffffff ;
+    font-size: 20px;
+    height: 70px;
+    width: 30%;
+    cursor: pointer;
+    margin-left: 35%;
+    margin-top: 40px;
+    background: none;
+    background-color: #273746;
+    border: none;
+    outline: none;
+    transition: all 1s;
+
+}
+.ongs-btn:hover{
+    background-color: #f3f3f3;
+    color: #453B51;
+    transition: all 0.5s ease-in-out;
+
+}
+p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 60px;
+}
+.page-riscos img{
+    transition: all 1s;
+    cursor: pointer;
+    margin-top: 1vh;
+    
+}
+.page-riscos :hover img{
+    transform: scale(1.1);
+    opacity: 60%;
+}
+.page-riscos{
+    height: 100vh;
+    background:linear-gradient(180deg,transparent,red ) ;
+
+}
+.ongsGeo ul a{
+    display: inline-block;
+    padding: 20px;
+}
+.ongsGeo a{
+    display: flex;
+    align-items: center 
+}
+.page-riscos h1{
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue ;
+}
+
+
+.titles h1{
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue ;
+    transition: all 0.5s;
+
+}
+.titles h1:hover{
+   transform: scale(1.1);
+
+}
+.page-saber{
+
+    height: 120vh;
+    background:linear-gradient(360deg,transparent,#0B5345 ) ;
+
+}
+.page-saber h1:hover{
+    transform: scale(1.1);
+
+}
+.text-saber{
+    width: 50%;
+    height: 50vh;
+    margin-left: 5%;
+}
+.text-saber p{
+   
+    color: aliceblue  ;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+.text-saber b{
+    font-size: 40px;
+    color: aliceblue;
+ 
+}
+.page-saber img{
+    float: right;
+    transition:  all 0.5s;
+    margin-top: 15vh;
+}
+.icons i {
+    font-size: 120px;
+    margin-top: 10px;
+    color: aliceblue;
+    padding: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.icons i:hover {
+   transform: scale(1.1);
+   opacity: 60%;
+   color: #138D75;
+
+}
+.icons{
+    text-align: center;
+    
+}
+
+.page-tecnologia{
+    margin-top: 10vh;
+    height: 80vh;
+    background:linear-gradient(360deg,transparent,#512E5F ) ;  
+
+
+
+}
+
+.page-tecnologia p{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: justify;
+    float: right;
+    margin-top: 10vh;
+    margin-right: 10%;
+width: 40%;
+}
+.page-tecnologia img{
+    width: 30%;
+    height: 50vh;
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 10%;
+    transition: all 0.5s;
+
+}
+.page-galeria{
+    margin-top: 20vh;
+    height: 100vh;
+        text-align: center;
+
+}
+.page-galeria img{
+   width: 25%;
+height: 40vh;
+padding: 25px;
+
+}
+
+.page-about{
+    text-align: center;
+    margin-top: 10vh;
+    height: 110vh;
+    width: 40%;
+    margin-left: 30%;
+    background:linear-gradient(360deg,transparent,#138D75) ;
+    transition: all 0.5s;
+}
+.page-about:hover{
+    transform: scale(1.1);
+
+}
+.text-about{
+    width: 100%;
+}
+.text-about p{
+    color: aliceblue  ;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+.page-about img{
+    width: 28%;
+    height: 20vh;
+    margin-left: 35%;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 25px;
+  
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="principal-title">
+      <h1>Bem-vindo(a) ao travel compass   <i class="fa fa-compass" aria-hidden="true"></i></h1>
+    </div>
+    <div class="container">
+
+    
+<div class="login-box">
+
+    <div class="title-login">
+        <h1 class="titulo">Login</h1>
+    </div>
+
+<div class="textbox">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+
+    <input placeholder="e-mail" class="user_email" type="text" id="email_user">
+</div>
+<div class="textbox">
+    <i class="fa fa-lock" aria-hidden="true"></i>
+    <input placeholder="senha" class="user_password"  type="password" id="senha_user">
+</div>
+
+
+    <div class="interaction-button">
+        <button onclick="login()">
+            ENTRAR
+            </button>
+    </div>
+   
+
+    <div class="question">
+       Caso não pussua um cadastro clique no botão abaixo
+    </div>
+    
+    
+    <div class="interaction-button">
+      
+        <button onclick="cadastro()">
+            CADASTRAR-SE
+            </button>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+    function login(){
+        var email = email_user.value;
+        var senha = senha_user.value;
+       
+
+        if (email == '' && senha == ''){
+            senha_user.style.border = '2px solid #922B21';
+            email_user.style.border = '2px solid #922B21';
+
+            } 
+            else if (senha == ''){
+            senha_user.style.border = '2px solid #922B21';
+            email_user.style.border ='2px solid #191919' ;
+
+            }
+            else if (email == ''){
+            email_user.style.border = '2px solid #922B21';
+            senha_user.style.border ='2px solid #191919' ;
+
+
+            }else 
+    setTimeout(function(){
+       window.location.href = "file:///C:/Users/rafae/OneDrive/Área%20de%20Trabalho/DesafioSiteIndividual-Sprint3/telaprincipal/index.html";},2000)
+       
+    }
+    
+function cadastro(){
+    setTimeout(function(){
+       window.location.href = "file:///C:/Users/rafae/OneDrive/%C3%81rea%20de%20Trabalho/DesafioSiteIndividual-Sprint3/telacadastro/index.html";},2000)
+
+}
+    
+</script>

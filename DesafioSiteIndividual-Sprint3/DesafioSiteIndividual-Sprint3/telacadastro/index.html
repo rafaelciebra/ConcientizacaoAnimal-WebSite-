@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="register-box">
+    <h2>Faça seu cadastro</h2>
+    <div class="container">
+    <div class="combo-box">
+        <select name="" id="01">
+        <option name="" id="estado">ESTADO</option>
+        <option name="" id="0">AC</option>
+        <option name="" id="1">AL</option>
+        <option name="" id="2">AP</option>
+        <option name="" id="3">AM</option>
+        <option name="" id="4">BA</option>
+        <option name="" id="5">CE</option>
+        <option name="" id="6">ES</option>
+        <option name="" id="7">GO</option>
+        <option name="" id="8">MA</option>
+        <option name="" id="9">MT</option>
+        <option name="" id="10">MS</option>
+        <option name="" id="11">MG</option>
+        <option name="" id="12">PA</option>
+        <option name="" id="13">PB</option>
+        <option name="" id="14">PR</option>
+        <option name="" id="15">PE</option>
+        <option name="" id="16">PI</option>
+        <option name="" id="17">RJ</option>
+        <option name="" id="18">RN</option>
+        <option name="" id="19">RS</option>
+        <option name="" id="20">RO</option>
+        <option name="" id="21">RR</option>
+        <option name="" id="22">SC</option>
+        <option name="" id="23">SP</option>
+        <option name="" id="24">SE</option>
+        <option name="" id="25">TO</option>
+        <option name="" id="26">DF</option>
+    </select>
+    </div>
+    
+    <div class="container-box" >
+        <input placeholder="Nome Completo" id="input_name">
+    </div>
+ 
+<div class="container-box" >
+    <input placeholder="email" type="" required id="input_email">
+</div>
+<div class="container-box" >
+    <input placeholder="senha" type="password" id="input_password">
+</div>
+<div class="container-box" >
+    <input placeholder="confirmar senha" type="password" id="input_validPassword">
+</div>
+<div class="register-button">
+<button onclick="register()"> 
+CADASTRAR-SE
+</button>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
+<script>
+    function register(){
+       var name = input_name.value;
+       var email = input_email.value;
+       var password = input_password.value;
+       var validPassword = input_validPassword.value;
+
+       if ( (name == '')  || (email == '') || (password == '') || (validPassword == '')){
+           alert ("Preencha os campos em branco para validar o seu cadastro!");
+       } else {
+           alert ("Você foi cadastrado com sucesso !")
+           setTimeout(function(){
+       window.location.href = "file:///C:/Users/rafae/OneDrive/%C3%81rea%20de%20Trabalho/DesafioSiteIndividual-Sprint3/telalogin/index.html";},2000)
+       }
+
+
+    }
+    
+</script>
