@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+<body>
+    <div class="register-box">
+        <br>
+    <h2>Preencha o formulário abaixo para receber informações</h2>
+    <form>
+    <div class="container">
+        <div class="container-box">
+            <div class="combo-box">
+<select name="" id="01">
+        <option name="" id="estado">ESTADO</option>
+        <option name="" id="0">AC</option>
+        <option name="" id="1">AL</option>
+        <option name="" id="2">AP</option>
+        <option name="" id="3">AM</option>
+        <option name="" id="4">BA</option>
+        <option name="" id="5">CE</option>
+        <option name="" id="6">ES</option>
+        <option name="" id="7">GO</option>
+        <option name="" id="8">MA</option>
+        <option name="" id="9">MT</option>
+        <option name="" id="10">MS</option>
+        <option name="" id="11">MG</option>
+        <option name="" id="12">PA</option>
+        <option name="" id="13">PB</option>
+        <option name="" id="14">PR</option>
+        <option name="" id="15">PE</option>
+        <option name="" id="16">PI</option>
+        <option name="" id="17">RJ</option>
+        <option name="" id="18">RN</option>
+        <option name="" id="19">RS</option>
+        <option name="" id="20">RO</option>
+        <option name="" id="21">RR</option>
+        <option name="" id="22">SC</option>
+        <option name="" id="23">SP</option>
+        <option name="" id="24">SE</option>
+        <option name="" id="25">TO</option>
+        <option name="" id="26">DF</option>
+</select>
+    </div>
+<label for="nome">
+        <input placeholder="seu nome Completo *"  type="text" id="input_name">
+</label>
+ <label for="email">
+        <input placeholder="seu melhor e-mail *" type="email"  id="input_email">
+ </label>
+<label for="idade">
+        <input placeholder="sua idade" type="number" id="input_idade">
+</div>
+</label>
+
+<!--infos-->
+<div id="info" class="info-box">
+   <h3>Quais informações você gostaria de receber?</h3>
+<label for="adocao-radio">
+    <input type="radio" name="info" id="adocao-radio"/>
+     adoção de animais
+</label><br>
+<label for="acontecimentos-radio">
+    <input type="radio" name="info" id="acontecimento-radio"/>
+    outros 
+</label>
+</div>
+<!---->
+<input type="submit" value="enviar" class="register-button" onclick="enviar()">
+</form>
+</div>
+
+</body>
+</html>
+<script>
+    function enviar(){
+        
+  if(!input_name.value){
+   alert('campo nome não informado')
+  } 
+  if((!input_email.value)||
+        (input_email.value.search('@') == -1) ||
+        (input_email.value.search('.') == -1) ||
+        (input_email.value.search(' ') >=  0)){
+      alert('campo e-mail não informado ou com formato incorreto')
+  } 
+  else{
+//INFORMAÇÕES AO BANCO E VOLTAR AO SITE
+    }
+    }
+</script>

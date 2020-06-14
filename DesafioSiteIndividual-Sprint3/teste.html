@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<label> Selecione uma espécie------------
+        <select name="especime" id="especie" class="combo">
+        <option value="x">--selecione uma espécie--</option>
+        <option value="gorila">Gorila Ocidental</option>
+        <option value="arara">Arara Azul</option>
+        <option value="leao">Leão Africano</option>
+        <option value="tigre">Tigre de bengala</option>
+    </select>
+</label><br>
+
+    <label> Digite aqui um número que represente o cenário de perdas<br>  desta espécie por ano no mundo.
+    <input type="number" id="input_cenario" >
+    </label><br>
+    <label> Digite um ano qualquer acima do ano em que <br>estamos para realizar a simulação.
+        <input type="number" id="input_ano">
+    </label><br>
+    <button onclick="simular()">
+        Simular
+    </button>
+    <br>
+    <span id="span_mensagem"></span>
+</body>
+</html>
+<script>
+
+    function simular(){
+    var ano = Number(input_ano.value);
+    var cenario = Number (input_cenario.value) * (ano - 2020);
+    var gorila = Number(1004);
+    var arara = Number(163);
+    var leão = Number(20000);
+    var tigre = Number(3890);
+    var Animal = especie.value;
+    
+    if(Animal == 'gorila'){
+    span_mensagem.innerHTML = `Atualmente existem cerca de 1004 gorilas no mundo, já No ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+    haverão um total de ${gorila-cenario} individuos` ;
+      
+    }else if (Animal == 'arara'){
+    span_mensagem.innerHTML = ` Atualmente existem cerca de 163 Araras azuis no mundo, já No ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+    haverão um total de ${arara-cenario} individuos` ;
+    
+    }
+    else if(Animal == 'leao'){
+    span_mensagem.innerHTML = `Atualmente existem cerca de 20000 Leões no mundo, já No ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+    haverão um total de ${leao-cenario}  individuos` ;
+   
+    }
+    else if(Animal == 'tigre'){
+    span_mensagem.innerHTML = `Atualmente existem cerca de 3890 tigres de bengala no mundo, já  No ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+     haverão um total de ${tigre-cenario} individuos` ;
+    }
+    }
+</script>
+<!--
+      if (cenario <0){
+        span_mensagem.innerHTML = `Atualmente existem cerca de 1004 gorilas no mundo, já No ano de ${ano} se
+         tivermos um cenário continio de caça ilegal contra esta espécie 
+    os gorilas estarão extintos`;
+       }
+-->

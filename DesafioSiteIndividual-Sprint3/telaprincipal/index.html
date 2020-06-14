@@ -4,60 +4,251 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TELA PRINCIPAL</title>
 </head>
 <body>
     <div class="container">
     <div class="nav-menu">
-        <i class="fa fa-compass" aria-hidden="true"></i>
-       <div class="nav-container">
+        <i class="fa fa-paw"></i>       
+          <div class="nav-container">
         <ul id="menu" class="nav">
             <li class="item-menu"><a href="#home">HOME</a></li>
-            <li class="item-menu"><a href="#ongs">ONGS</a></li>
-            <li class="item-menu"><a href="#brasil">O QUE VOCÊ DEVE SABER</a></li>
+            <li class="item-menu"><a href="#riscos">ANIMAIS EM RISCO</a></li>
+            <li class="item-menu"><a href="#saber">O QUE VOCÊ DEVE SABER</a></li>
+            <li class="item-menu"><a href="#tecnologia">SIMULAR</a></li>
+            <li class="item-menu"><a href="#galeria">GALERIA</a></li>
             <li class="item-menu"><a href="#sobre">SOBRE</a></li>
-            <li class="item-menu"><a href="#contato">CONTATO</a></li>
-            <button class="user_profile" onclick="register()">CADASTRAR-SE</button>
+            <button class="saberM" onclick="mais()">QUERO SABER MAIS</button>
         </ul>
        </div>
     </div>
 
     <main class="main-container">
 <div class="title111">
-    <section >
+    <section id="home">
+        <br><br>
+        <h3>navegue e entenda sobre a importância deste tema - #ProtectAnimals.</h3>
+
 <h1>A grandeza de uma nação pode ser julgada <br>pelo modo que seus animais são tratados.
     </h1>
-    <h3>navegue e entenda sobre a importância deste tema - ProtectAnimals.</h3>
 </div>
 <div class="div-ongs">
-    <button class="ongs-btn" onclick="destinos()">CONHECER ONGS DE PROTEÇÃO ANIMAL </button>
+    <button class="ongs-btn" onclick="conhecer()">CONHECER ONGS DE PROTEÇÃO ANIMAL </button>
+</div>
+<div class="div-ongs">
+    <button class="ongs-btn" onclick="adotar()" > ADOTE </button>
 </div>
 <p>created by Rafael Ciebra - BandTec Digital School</p>
 </div>
-<div id="ongs" class="page-ongs">
-    <h1>ONGS de proteção animal no  <a style="color: #0E6655 ;">Brasil</a> e no mundo</h1>
-   
-    <span>
-       
-        <img src="imagens/arara.jpg" alt="" style="width: 50%;height: 80vh;" onclick="">
 
+
+<!--
+    ONGS
+-->
+
+<div id="riscos" class="page-riscos"><br><br><br>
+    <h1>Saiba quais são os animais com risco de extinção <br>no <a style="color: #0E6655 ;">Brasil</a> e no mundo</h1> 
+    <span>
+        <img src="imagens/arara copy.jpg" title="Brasil" style="width: 50%;height: 80vh;" onclick="brasil()">
     </span>
     <span >
-        <img src="imagens/gato.png" alt="" style="float: right;width: 50%; height: 80vh;" onclick="">
-
+        <img src="imagens/tiger.jpg" title="Mundo" style="float: right;width: 50%; height: 80vh;" onclick="mundo()">
     </span>
-
 </div>
   
+<!--
+    O QUE VOCÊ DEVE SABER
+-->
+<div id="saber" class="page-saber"><br><br>
+    <div class="titles">
+        <h1>O que você <b style="color: #641E16;">deve</b> saber</h1> 
+    </div>
+    <img src="imagens/coelho1.png" alt="" style="width: 50%;height: 80vh;">
+    <div class="text-saber">
+       <p>  
+        <b> O que está errado?</b><br>
+Estamos consumindo os recursos naturais da Terra mais rápido do que eles podem ser renovados. 
+Destruímos os hábitats dos animais, seus alimentos, água e ar — bem como os próprios animais — a um índice insustentável.
+ À medida que mais ninhos de pássaros são destruídos para a construção de arranha-céus, rios são drenados para a construção de estacionamentos
+  e elefantes são abatidos para a fabricação de adornos, o número e a diversidade dos animais encolhem.
+O tráfico aumenta a ameaça à vida selvagem. O comércio ilícito de animais e de partes de seu corpo no mercado negro está crescendo. 
+O aumento da demanda por produtos provenientes de elefantes, rinocerontes e trigres, bem como de outros animais terrestres icônicos, ameaça não apenas 
+essas espécies, mas a paz, a saúde e a prosperidade das pessoas que vivem próximas deles. 
+O tráfico de vida selvagem reduz a segurança dos cidadãos e os lucros de negócios legítimos.
+<br><br>
+<b>Por que devemos nos importar? </b><br>
+Quando uma espécie de animal é extinta, os animais insubstituíveis são apenas parte da perda. 
+Embora possamos considerar o mundo animal separado do nosso mundo, nossas vidas e as deles estão interligadas, conectadas por milhões de fios. 
+Plantas, animais, pessoas e o meio ambiente juntos constituem uma comunidade biológica — um ecossistema — no qual cada parte 
+depende do outro para sobreviver. Quando uma parte da comunidade entra em desequilíbrio ou é eliminada, o sistema todo sofre.
+<br><br>
+<b>Todos podem ajudar </b><br>
+Embora os seres humanos sejam a maior ameaça à vida selvagem, também somos sua única esperança.
+ Em todo o mundo pessoas físicas e pequenos grupos, bem como grandes organizações, empresas e governos, estão fazendo sua parte para garantir um 
+ futuro mais seguro para a nossa vida selvagem — e para nós. Desde conter a demanda por produtos derivados de animais, criar e aplicar leis contra o 
+ tráfico ilegal e ser voluntário em organizações conservacionistas que ajudam a proteger espécies em perigo de extinção, os heróis da conservação combatem 
+ as ameaças enfrentadas pelos animais do planeta.
+ <br>
+Nenhuma ação de conservação é pequena demais. Talvez não sejamos capazes de recuperar espécies que já foram perdidas, mas muitas 
+outras em vias de extinção precisam de nossa atenção e ação imediatas. Não seja parte do problema. Seja a solução: respeite e proteja a vida selvagem 
+da Terra.</p>
+
+</div>
+   </div >
+   <div class="icons">
+    <i class="fa fa-comment" onclick="foruns()">foruns</i>
+    <i class="fa fa-info-circle" onclick="green()">GreenPeace</i> 
+    <i class="fa fa-play" onclick="play()">play</i>
+   </div>
+<div class="page-tecnologia" id="tecnologia">
+    <div class="titles"><br><br>
+        <h1 >Simular cenário de extinção</h1>
+    </div>
+<div class="simulador">
+    <div class="simulador-container"><br><br>
+        <label> Selecione uma espécie
+            <select name="especime" id="especie" class="combo">
+                <option value="x">selecione uma espécie</option>
+                <option value="gorila">Gorila Ocidental</option>
+                <option value="arara">Arara Azul</option>
+                <option value="leao">Leão Africano</option>
+                <option value="tigre">Tigre de bengala</option>
+            </select>
+        </label><br>
+        <br>
+            <label> Digite aqui um número que represente o cenário de perdas<br>  desta espécie por ano no mundo.
+            <input type="number"  id="input_cenario" >
+            </label><br><br>
+            <label> Digite um ano qualquer acima do ano em que <br>estamos para realizar a simulação.
+                <input type="number"  id="input_ano">
+            </label><br><br>
+            <button onclick="simular()">
+                Simular
+            </button>
+            <br><br><br>
+            <span id="span_mensagem"></span>
+        </div>
+</div>
+</div>
+<div class="page-galeria" id="galeria">
+    <div class="titles"><br><br><br>
+        <h1>Galeria de fotos</h1> 
+    </div>
+
+        <img src="imagens/arara.jpg" >
+        <img src="imagens/dog.jpg" >
+        <img src="imagens/cat.png" >
+        <img src="imagens/garca.jpg">
+        <img src="imagens/bufalo.jpg">
+        <img src="imagens/galo.jpg">
+ 
+</div>
+
+<br><br>
+<div id="sobre" class="page-about"><br>
+       <div class="titles">
+        <h1 style="color: aliceblue;">Sobre</h1> 
+        </div>
+<img src="imagens/eu2.jpeg" alt="">
+    <div class="text-about">
+        <p>
+         Olá! meu nome é Rafael e tenho 18 anos, você provavelmente deve estar se perguntando por que eu escolhi este tema?
+Bom, sempre fui apaixonado pelos animais, faço parte do grupo de pessoas que escolheu 
+ama-los e respeita-los, acredito que todas as pessoas tem uma missão na vida. Todos os protetores de animais 
+são pessoas que protegem qualquer espècie de animal do sofrimento e abandono sejam eles bixos ou humanos.
+tenho como um dos meus objetivos de vida fazer parte de projetos contra a violência e exploração aos animais.
+Tenho atualmente dois cachorros que amo muito (Johny e Ozzy ) eles me dão amor e carinho que poucos humanos dão.
+<br>
+       Atualmente sou estudante de Análise e desenvolvimento de sistemas, o desenvolvimento deste site individual foi um verdadeiro desafio, porém muito prazerozo de desenvolver pois juntou duas paixões minhas,
+Desenvolver e Abordar o tema pro vida animal :) 
+        </p>
+   
+     </div>
+     <img src="imagens/jj.jpeg "   alt="" >
+<img src="imagens/ozzy.jpeg" alt="">
+
+</div>
 
 </section >
     </main>
 </body>
 </html>
 <script>
-    function register(){
+    function mais(){
         setTimeout(function(){
-       window.location.href = "file:///C:/Users/rafae/OneDrive/%C3%81rea%20de%20Trabalho/projeo%20site%20com%20tela%20de%20cadastro/telalogin/index.html";},2000)
+       window.location.href = "file:///C:/Users/rafae/OneDrive/%C3%81rea%20de%20Trabalho/DesafioSiteIndividual-Sprint3/formulario/index.html?info=on";},2000)
     }
+
+function conhecer(){
+    setTimeout(function(){
+       window.location.href = "http://redeglobo.globo.com/acao/noticia/2012/09/conheca-algumas-ongs-e-entidades-que-trabalham-em-prol-dos-animais.html";},2000)
+
+}function adotar(){
+    setTimeout(function(){
+       window.location.href = "https://www.amigonaosecompra.com.br/";},2000)
+
+}function brasil(){
+    setTimeout(function(){
+       window.location.href = "https://www.todamateria.com.br/animais-em-extincao-no-brasil/";},2000)
+
+}
+function brasil(){
+    setTimeout(function(){
+       window.location.href = "https://www.todamateria.com.br/animais-em-extincao-no-brasil/";},2000)
+
+}
+function mundo(){
+    setTimeout(function(){
+       window.location.href = "https://www.worldwildlife.org/species/directory?direction=desc&sort=extinction_status";},2000)
+
+}
+function foruns(){
+    setTimeout(function(){
+       window.location.href = "https://www.worldwildlife.org/species/directory?direction=desc&sort=extinction_status";},2000)
+
+}
+function green(){
+    setTimeout(function(){
+       window.location.href = "https://doe.greenpeace.org.br/proteja-a-biodiversidade/p";},2000)
+
+}
+function play(){
+    setTimeout(function(){
+       window.location.href = "https://www.youtube.com/watch?v=xcqsQuvtH7E";},2000)
+
+}
+
+function simular(){
+    var ano = Number(input_ano.value);
+    var cenario = Number (input_cenario.value) * (ano - 2020);
+    var gorila = Number(1004);
+    var arara = Number(163);
+    var leao = Number(20000);
+    var tigre = Number(3890);
+    var Animal = especie.value;
     
+    if(Animal == 'gorila'){
+    span_mensagem.innerHTML = `Atualmente existem cerca de 1004 gorilas no mundo, já no ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+    haverão um total de ${gorila-cenario} individuos` ;
+      
+    }else if (Animal == 'arara'){
+    span_mensagem.innerHTML = ` Atualmente existem cerca de 163 Araras azuis no mundo, já no ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+    haverão um total de ${arara-cenario} individuos` ;
+    
+    }
+    else if(Animal == 'leao'){
+    span_mensagem.innerHTML = `Atualmente existem cerca de 20000 Leões no mundo, já no ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+    haverão um total de ${leao-cenario}  individuos` ;
+   
+    }
+    else if(Animal == 'tigre'){
+    span_mensagem.innerHTML = `Atualmente existem cerca de 3890 tigres de bengala no mundo, já  no ano de ${ano} se 
+    tivermos um cenário continio de caça ilegal contra esta espécie 
+     haverão um total de ${tigre-cenario} individuos` ;
+    }
+    }
+
 </script>

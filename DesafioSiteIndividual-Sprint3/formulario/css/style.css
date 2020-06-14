@@ -1,0 +1,91 @@
+body{
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background: url(../imagens/turtle.jpg) no-repeat;
+}
+.register-box{ 
+background-color: #17202A;
+width:27%;
+height: 65vh;
+text-align: center;
+margin-top: 10vh;
+margin-left: 35%;
+border-radius: 15px;
+
+}
+.register-box h2{
+color: #ffffff;
+text-align: center;
+}
+.combo-box select{
+    width: 70%;
+    height: 45px;
+    border: none;
+    margin: 8px 0;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    color:#ffffff;
+    outline: none;
+    margin-top: 8px;
+}
+.combo-box select option{
+  color: #000000;
+    
+}
+.container-box input{
+    font-size: 18px;
+    height: 27px;
+    width: 70%;
+    border-radius: 30px;
+    border: 3px solid #2E4053;
+    background-color:#2E4053 ;
+    overflow: hidden;
+    padding: 8px 0;
+    margin: 8px 0;
+    text-align: center;
+    color: #5D6D7E;
+    background: #ffffff;
+    outline: none;
+}
+.container-box ::placeholder{
+    color:#2E4053;
+}
+.container-box input:hover{
+ border:3px solid#5B2C6F;
+    
+}
+.register-button {
+    border-radius: 30px;
+    border: 3px solid #2E4053;
+	background-color: #2E4053 ;
+	color: #FFFFFF;
+    font-size: 18px;
+    height: 50px;
+    width: 45%;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2vh;
+    transition: all 0.8s;
+}
+.register-button:hover{
+    border: 3px solid #5B2C6F;
+    transition: all 0.5s;
+    color: #ffffff;
+    background-color: #5B2C6F;
+}
+.info-box{
+    margin-top: 5vh;
+    font-weight: bolder;
+    text-align: justify;
+    color: #ffffff;
+}
+.info-box input{
+    
+    margin-left: 10%;
+}
+.info-box h3{
+    text-align: center;
+}

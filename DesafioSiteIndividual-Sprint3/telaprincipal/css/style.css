@@ -1,22 +1,29 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0 auto;
     padding: 0;
     font-family: sans-serif;
-    background-color: #FA8072;
+    background-color: #17202A;
 }
 .container{
-    height: 65vh;
+   
+    height: 100vh;
+    background: url(../imagens/animal.jpg) no-repeat;
 }
 .nav-menu{
     background-color: #191919;
-    opacity: 60%;
+    opacity: 80%;
     height: 80px;
     width: 100%;
+    position: fixed;
 }
 .nav-menu div ul{
+
     margin: 0 auto;
-    margin-left: 10%;
+   text-align: center;
 }
 .nav-menu div ul li{
 display: inline-block;
@@ -28,33 +35,31 @@ margin-top: 10px;
     font-size: 18px;
     color: ivory;
     text-decoration: none;
-}
-.nav-menu div ul li :hover{
-    border-bottom: 4px solid #273746;
-
 
 }
+.nav-menu a:hover{
+border-bottom:2px solid #ffffff;}
 
-.user_profile{
+.saberM{
     border-radius: 35px;
 	color: #ffffff ;
     font-size: 12px;
     height: 50px;
     width: 15%;
     cursor: pointer;
-    margin-left: 15%;
     background: none;
   outline: none;
 }
-.user_profile:hover{
+.saberM:hover{
     background-color: #ffffff;
-    color: #000000;
+    color: #191919;
     transition: all 0.8s;
 
 }
 .nav-menu i{
+
     font-size: 60px;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-top: 10px;
     color: #ffffff;
 }
@@ -65,11 +70,18 @@ margin-top: 10px;
 .title111{
     text-align: center;
     font-size: 50px;
-    color: #191919;   
+    color: #191919; 
+     
 }
 .title111 h3{
     font-size: 30px;
     color: #191919;
+   
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 15px;
+    height: 4vh;
+    padding: 8px;
 }
 .ongs-btn{
     border-radius: 35px;
@@ -84,11 +96,13 @@ margin-top: 10px;
     background-color: #273746;
     border: none;
     outline: none;
+    transition: all 1s;
+
 }
 .ongs-btn:hover{
     background-color: #f3f3f3;
     color: #453B51;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
 
 }
 p{
@@ -96,14 +110,20 @@ p{
     text-align: center;
     margin-top: 60px;
 }
-.page-ongs img{
-    transition: all 0.5s;
+.page-riscos img{
+    transition: all 1s;
     cursor: pointer;
     margin-top: 1vh;
     
 }
-.page-ongs :hover img{
+.page-riscos :hover img{
     transform: scale(1.1);
+    opacity: 90%;
+}
+.page-riscos{
+    height: 110vh;
+    background:linear-gradient(180deg,transparent,#01341C  ) ;
+
 }
 .ongsGeo ul a{
     display: inline-block;
@@ -113,9 +133,185 @@ p{
     display: flex;
     align-items: center 
 }
-.page-ongs h1{
+.page-riscos h1{
     text-align: center;
     font-size: 70px;
-    color: #191919;
+    color: aliceblue ;
+}
 
+
+.titles h1{
+    text-align: center;
+    font-size: 70px;
+    color: aliceblue ;
+    
+
+}
+
+.page-saber{
+
+    height: 120vh;
+    background:linear-gradient(360deg,transparent,#01341C ) ;
+
+}
+
+.text-saber{
+    width: 50%;
+    height: 50vh;
+    margin-left: 5%;
+}
+.text-saber p{
+   
+    color: aliceblue  ;
+    font-size: 18px;
+    text-align: justify;
+    
+}
+.text-saber b{
+    font-size: 40px;
+    color: aliceblue;
+ 
+}
+.page-saber img{
+    float: right;
+    margin-top: 5vh;
+}
+.icons i {
+    font-size: 120px;
+    margin-top: 10px;
+    color: aliceblue;
+    padding: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.icons i:hover {
+   transform: scale(1.1);
+   opacity: 60%;
+   color: #138D75;
+
+}
+.icons{
+    text-align: center;
+    
+}
+
+.page-tecnologia{
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 10vh;
+    height: 100vh;
+ background-color: #32034F;
+ text-align: center;
+ border-radius: 15px;
+
+}
+.simulador{
+    background-color: #17202A;
+    border-radius: 15px;
+    width: 45%;
+    height: 70vh;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: justify;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.simulador input{
+    font-size: 18px;
+    height: 27px;
+    width: 70%;
+    border-radius: 30px;
+    border: 3px solid #2E4053;
+    background-color:#2E4053 ;
+    overflow: hidden;
+    padding: 8px 0;
+    margin: 8px 0;
+    text-align: center;
+    color: #5D6D7E;
+    background: #ffffff;
+    outline: none;
+}
+.combo{
+    width: 70%;
+    height: 45px;
+    border: none;
+    margin: 8px 0;
+    background: none;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    color:#ffffff;
+    outline: none;
+    margin-top: 8px;
+}
+.combo option{
+    color: #000000;
+    text-align: center;
+}
+.simulador button{
+    border-radius: 30px;
+    border: 3px solid #2E4053;
+	background-color: #2E4053 ;
+	color: #FFFFFF;
+    font-size: 18px;
+    height: 50px;
+    width: 45%;
+    cursor: pointer;
+    outline: none;
+    margin-top: 2vh;
+    transition: all 0.8s;
+}
+.simulador button:hover{
+    border: 3px solid #5B2C6F;
+    transition: all 0.5s;
+    color: #ffffff;
+    background-color: #5B2C6F;
+}
+.page-galeria{
+    height: 120vh;
+    text-align: center;
+        
+
+}
+.page-galeria img{
+width: 25%;
+height: 40vh;
+padding: 40px;
+}
+
+.page-about{
+
+    text-align: center;
+    height: 120vh;
+    width: 40%;
+    margin: 0 auto;
+    background:linear-gradient(360deg,transparent,#138D75) ;
+   
+}
+
+.text-about{
+    width: 100%;
+}
+.text-about p{
+    color: aliceblue  ;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+.page-about img{
+    width: 25%;
+    height: 20vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+  
+}
+.rodape{
+    background-color: #191919;
+    height: 20vh;
+   
 }
